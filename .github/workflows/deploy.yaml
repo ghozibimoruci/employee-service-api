@@ -25,11 +25,11 @@ jobs:
       - name: Run Tests
         run: mvn test
 
-      - name: Set Environment Variables
-        run: |
-          echo "DB_EMPLOYEE_URL=${{ secrets.DB_EMPLOYEE_URL }}" >> $GITHUB_ENV
-          echo "DB_EMPLOYEE_USER=${{ secrets.DB_EMPLOYEE_USER }}" >> $GITHUB_ENV
-          echo "DB_EMPLOYEE_PASS=${{ secrets.DB_EMPLOYEE_PASS }}" >> $GITHUB_ENV
+      # - name: Set Environment Variables
+      #   run: |
+      #     echo "DB_EMPLOYEE_URL=${{ secrets.DB_EMPLOYEE_URL }}" >> $GITHUB_ENV
+      #     echo "DB_EMPLOYEE_USER=${{ secrets.DB_EMPLOYEE_USER }}" >> $GITHUB_ENV
+      #     echo "DB_EMPLOYEE_PASS=${{ secrets.DB_EMPLOYEE_PASS }}" >> $GITHUB_ENV
 
-      - name: Run Spring Boot Application (Optional)
-        run: mvn spring-boot:run
+      # - name: Run Spring Boot Application (Optional)
+      #   run: mvn spring-boot:run
